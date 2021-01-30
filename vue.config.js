@@ -1,4 +1,4 @@
 module.exports = {
 	transpileDependencies: ['vuetify'],
-	publicPath: '/dreamlix-template'
+	publicPath: '/dreamlix-template/'
 };

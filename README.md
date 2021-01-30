@@ -44,3 +44,4 @@ Option 2 seems better. This is just an opinion.
 - Prettier - Code formatter
 - vscode-icons
 - Vue VSCode Snippets
+- MDX
