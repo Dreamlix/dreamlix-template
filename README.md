@@ -10,6 +10,11 @@ npm install
 npm run serve
 ```
 
+### Run Storybook
+```
+npm run storybook
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
@@ -22,7 +27,7 @@ Storybook allows you to develop Vue components (and composite compenents) in iso
 2. Define what the new component is meant to do
 3. Create the component (shellcode) and include it in the new story
 4. Implement the code
-5. Using the Storybook Prop feature, the new component's props and events will be listed in the story's `Doc` tab
+5. Storybook should show the new component's props, slots, and events in both the `Controls` and `Docs` tab
 
 ## Recommended workflow for a new client/product
 To make components reusable per client there are two avenues one could follow. 

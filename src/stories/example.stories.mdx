@@ -1,0 +1,25 @@
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
+import ExampleComponent from '@/components/ExampleComponent.vue';
+
+<Meta title="Components/Examples" component={ExampleComponent} />
+
+# Button
+
+<ArgsTable of={ExampleComponent} />
+
+This is a simple button with some text in it.
+
+<Canvas>
+  <Story name="With Text">
+    {{
+        components: { ExampleComponent },
+        template: `
+          <example-component title="A storybook entry's provided title" @click="action">
+            This content is filled via a default slot
+          </example-component>`,
+        methods: { action: action("clicked") }
+    }}
+  </Story>
+</Canvas>

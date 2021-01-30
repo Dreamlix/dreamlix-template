@@ -1,11 +1,12 @@
 {
   "name": "dreamlix-template",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "export STORYBOOK_MODE=true || set STORYBOOK_MODE=true && vue-cli-service storybook:serve -p 6006 -c ./.storybook -s ./public",
+    "storybook:build": "npm run storybook:clean && vue-cli-service storybook:build -s ./public -c ./.storybook -o ./target/storybook"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -13,6 +14,10 @@
     "vuetify": "^2.4.0"
   },
   "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/vue": "^6.0.26",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -29,33 +34,9 @@
     "sass": "^1.32.0",
     "sass-loader": "^10.0.0",
     "typescript": "~3.9.3",
+    "vue-cli-plugin-storybook": "~2.0.0",
     "vue-cli-plugin-vuetify": "~2.1.0",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/typescript/recommended",
-      "@vue/prettier",
-      "@vue/prettier/@typescript-eslint"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint",
-      "ecmaVersion": 2020
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "_id": "dreamlinx@0.1.0",
-  "readme": "ERROR: No README data found!"
+  }
 }

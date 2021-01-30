@@ -14,8 +14,7 @@
 		</v-app-bar>
 
 		<v-main>
-			<!-- <HelloWorld /> -->
-			<example-component />
+			<example-component>Some example card title text</example-component>
 		</v-main>
 	</v-app>
 </template>
