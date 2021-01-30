@@ -21,7 +21,7 @@ npm run build
 ```
 
 ## Recommended workflow for components
-Storybook allows you to develop Vue components (and composite compenents) in isolation from any integration. I propose the following workflow when designing and implementing a new component:
+Storybook allows you to develop Vue components (and composite components) in isolation from any integration. I propose the following workflow when designing and implementing a new component:
     
 1. Create a new storybook entry for the component
 2. Define what the new component is meant to do
