@@ -6,7 +6,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "storybook": "export STORYBOOK_MODE=true || set STORYBOOK_MODE=true && vue-cli-service storybook:serve -p 6006 -c ./.storybook -s ./public",
-    "storybook:build": "npm run storybook:clean && vue-cli-service storybook:build -s ./public -c ./.storybook -o ./target/storybook"
+    "storybook:build": "rimraf ./target/storybook && vue-cli-service storybook:build -s ./public -c ./.storybook -o ./target/storybook"
   },
   "dependencies": {
     "core-js": "^3.6.5",
