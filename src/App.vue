@@ -16,18 +16,19 @@
 		<v-main>
 			<example-component>Some example card title text</example-component>
 		</v-main>
+		<footer-alpha />
 	</v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import ExampleComponent from './components/ExampleComponent.vue';
+import ExampleComponent from '@/core/components/ExampleComponent.vue';
+import FooterAlpha from '@/core/templates/footers/FooterAlpha.vue';
 
 export default Vue.extend({
-	name: 'App',
-
 	components: {
-		ExampleComponent
+		ExampleComponent,
+		FooterAlpha
 	},
 
 	data: () => ({

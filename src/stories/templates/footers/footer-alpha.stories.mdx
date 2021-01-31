@@ -1,0 +1,22 @@
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
+import FooterAlpha from '@/core/templates/footers/FooterAlpha.vue';
+
+<Meta title="Templates/Footers/FooterAlpha" component={FooterAlpha} />
+
+# FooterAlpha
+
+<ArgsTable of={FooterAlpha} />
+
+This a simple footer inspired by [Buzzbomb](https://buzzbomb.com/) 
+
+<Canvas>
+  <Story name="Default">
+    {{
+        components: { FooterAlpha },
+        template: `
+          <footer-alpha />`,
+    }}
+  </Story>
+</Canvas>

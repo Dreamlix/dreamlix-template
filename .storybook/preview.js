@@ -5,5 +5,5 @@ import 'vuetify/dist/vuetify.min.css';
 
 addDecorator(() => ({
 	vuetify: vuetify,
-	template: '<v-app><v-content><v-container><v-layout column><story/></v-layout></v-container></v-content></v-app>'
+	template: '<v-app><v-main><v-container><v-layout column><story/></v-layout></v-container></v-main></v-app>'
 }));

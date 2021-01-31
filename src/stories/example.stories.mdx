@@ -1,7 +1,7 @@
 import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
-import ExampleComponent from '@/components/ExampleComponent.vue';
+import ExampleComponent from '@/core/components/ExampleComponent.vue';
 
 <Meta title="Components/Examples" component={ExampleComponent} />
 
@@ -12,7 +12,7 @@ import ExampleComponent from '@/components/ExampleComponent.vue';
 This is a simple button with some text in it.
 
 <Canvas>
-  <Story name="With Text">
+  <Story name="Default">
     {{
         components: { ExampleComponent },
         template: `
