@@ -14,21 +14,25 @@
 		</v-app-bar>
 
 		<v-main>
-			<example-component>Some example card title text</example-component>
+			<landing-section-component
+					title="Provided Page Title"
+					subtitle="Provided Page SubTitle"
+			>
+				This content is filled via a default slot
+			</landing-section-component>`,
 		</v-main>
-		<footer-alpha />
 	</v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import ExampleComponent from '@/core/components/ExampleComponent.vue';
+import LandingSectionComponent from '@/core/components/LandingSectionComponent.vue';
 import FooterAlpha from '@/core/templates/footers/FooterAlpha.vue';
 
 export default Vue.extend({
 	components: {
-		ExampleComponent,
-		FooterAlpha
+		LandingSectionComponent,
+		// FooterAlpha
 	},
 
 	data: () => ({
@@ -36,3 +40,15 @@ export default Vue.extend({
 	})
 });
 </script>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+	html, body {
+		font-family: 'Amatic SC';
+	}
+
+	#app {
+		font-family: 'Amatic SC';
+	}
+</style>
