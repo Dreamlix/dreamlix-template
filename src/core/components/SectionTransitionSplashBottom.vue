@@ -1,40 +1,41 @@
 <template>
-    <div class="container-bottom-transition">
-        <div class="image-block">
-            <img class="bottom-transition" src="/texture-bottom.png">
-        </div>
-    </div>
+	<div class="container-bottom-transition">
+		<div class="image-block">
+			<img class="bottom-transition" src="/texture-bottom.png" />
+			<!-- TODO: use require to get image from assets directory and add alt -->
+		</div>
+	</div>
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
+import Vue from 'vue';
 
-    export default Vue.extend({
-        name: "SectionTransitionSplashBottom"
-    });
+export default Vue.extend({
+	name: 'SectionTransitionSplashBottom'
+});
 </script>
 
 <style scoped>
-    .container-bottom-transition {
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+.container-bottom-transition {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
-    .image-block {
-        width: 60%;
-        height: 100px;
-        position: relative;
-    }
+.image-block {
+	width: 60%;
+	height: 100px;
+	position: relative;
+}
 
-    .bottom-transition {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
+.bottom-transition {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 </style>

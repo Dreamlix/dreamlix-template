@@ -21,7 +21,7 @@ npm run build
 ```
 
 ### Build the current branch's project and deploy it to github
-./deploy.sh
+`./deploy.sh`
 
 ## Recommended workflow for components
 Storybook allows you to develop Vue components (and composite components) in isolation from any integration. I propose the following workflow when designing and implementing a new component:

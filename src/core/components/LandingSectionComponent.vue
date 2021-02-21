@@ -28,7 +28,7 @@ export default Vue.extend({
 </script>
 
 <style>
-	h1 {
-		text-align: center;
-	}
+h1 {
+	text-align: center;
+}
 </style>
