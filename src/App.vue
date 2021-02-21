@@ -2,14 +2,11 @@
 	<v-app>
 		<app-bar logo="header-logo-white.png" :links="headerLinks"></app-bar>
 		<v-main>
-			<landing-section-component title="Provided Page Title" background-image="https://i.imgur.com/bX2Uk7C.jpg">
-				<template v-slot:transition-top>
-					<component :is="transitionTop"></component>
-				</template>
+			<section-landing title="Provided Page Title" background-image="https://i.imgur.com/bX2Uk7C.jpg">
 				<template v-slot:transition-bottom>
 					<component :is="transitionBottom"></component>
 				</template>
-			</landing-section-component>
+			</section-landing>
 			<div style="height: 400px;"></div>
 			<section-image background-image="https://i.imgur.com/bX2Uk7C.jpg">
 				<template v-slot:transition-top>
@@ -43,7 +40,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import LandingSectionComponent from '@/core/components/LandingSectionComponent.vue';
+import SectionLanding from '@/core/components/SectionLanding.vue';
 import SectionImage from '@/core/components/SectionImage.vue';
 import SectionTransitionBottomSplash from '@/core/components/transitions/SectionTransitionBottomSplash.vue';
 import SectionTransitionTopSplash from '@/core/components/transitions/SectionTransitionTopSplash.vue';
@@ -53,17 +50,17 @@ import Link from '@/core/models/link';
 
 export default Vue.extend({
 	components: {
-        AppBar,
-		LandingSectionComponent,
-        SectionTransitionTopSplash,
-        SectionTransitionBottomSplash,
-        SectionImage,
-        CardInfoMinimal
+		AppBar,
+		SectionLanding,
+		SectionTransitionTopSplash,
+		SectionTransitionBottomSplash,
+		SectionImage,
+		CardInfoMinimal
 	},
 	data: () => ({
-        headerLinks: [new Link('#', 'Store'), new Link('#', 'Accommodation'), new Link('#', 'Events'), new Link('#', 'Contact')],
-        transitionTop: 'SectionTransitionTopSplash',
-        transitionBottom: 'SectionTransitionBottomSplash'
+		headerLinks: [new Link('#', 'Store'), new Link('#', 'Accommodation'), new Link('#', 'Events'), new Link('#', 'Contact')],
+		transitionTop: 'SectionTransitionTopSplash',
+		transitionBottom: 'SectionTransitionBottomSplash'
 	})
 });
 </script>
