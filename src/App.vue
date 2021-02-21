@@ -1,18 +1,6 @@
 <template>
 	<v-app>
-		<v-app-bar app color="grey lighten-3">
-			<div class="d-flex align-center">
-				<v-img
-					alt="Vuetify Logo"
-					class="shrink mr-2"
-					contain
-					src="https://images.squarespace-cdn.com/content/600fff8831539d708a565cc6/1611667752413-J16I28OW25P5CRTIA2OO/dreamcatcher.png?content-type=image%2Fpng"
-					transition="scale-transition"
-					width="40"
-				/>
-			</div>
-		</v-app-bar>
-
+		<app-bar logo="header-logo-white.png" :links="headerLinks"></app-bar>
 		<v-main>
 			<landing-section-component title="Provided Page Title" background-image="https://i.imgur.com/bX2Uk7C.jpg">
 				<template v-slot:transition-top>
@@ -60,19 +48,22 @@ import SectionImage from '@/core/components/SectionImage.vue';
 import SectionTransitionBottomSplash from '@/core/components/transitions/SectionTransitionBottomSplash.vue';
 import SectionTransitionTopSplash from '@/core/components/transitions/SectionTransitionTopSplash.vue';
 import CardInfoMinimal from '@/core/components/cards/CardInfoMinimal.vue';
+import AppBar from '@/core/components/AppBar.vue';
+import Link from '@/core/models/link';
 
 export default Vue.extend({
 	components: {
+        AppBar,
 		LandingSectionComponent,
-		SectionTransitionTopSplash,
-		SectionTransitionBottomSplash,
-		SectionImage,
-		CardInfoMinimal
+        SectionTransitionTopSplash,
+        SectionTransitionBottomSplash,
+        SectionImage,
+        CardInfoMinimal
 	},
-
 	data: () => ({
-		transitionTop: 'SectionTransitionTopSplash',
-		transitionBottom: 'SectionTransitionBottomSplash'
+        headerLinks: [new Link('#', 'Store'), new Link('#', 'Accommodation'), new Link('#', 'Events'), new Link('#', 'Contact')],
+        transitionTop: 'SectionTransitionTopSplash',
+        transitionBottom: 'SectionTransitionBottomSplash'
 	})
 });
 </script>
@@ -82,10 +73,10 @@ export default Vue.extend({
 
 html,
 body {
-	font-family: 'Amatic SC';
+	font-family: 'Amatic SC', serif;
 }
 
 #app {
-	font-family: 'Amatic SC';
+	font-family: 'Amatic SC', serif;
 }
 </style>

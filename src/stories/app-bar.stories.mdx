@@ -1,0 +1,23 @@
+import {ArgsTable, Canvas, Meta, Story} from '@storybook/addon-docs/blocks';
+import AppBar from "@/core/components/AppBar";
+
+<Meta title="Components/Header" component={AppBar}/>
+
+# Button
+
+<ArgsTable of={AppBar}/>
+
+This is a simple button with some text in it.
+
+<Canvas>
+  <Story name="Default">
+    {{
+      components: {AppBar},
+      template: `
+          <app-bar logo="header-logo-white.png">
+            This content is filled via a default slot
+          </app-bar>`,
+      methods: {}
+    }}
+  </Story>
+</Canvas>
