@@ -4,7 +4,7 @@
 		<v-main>
 			<landing-section-component title="Provided Page Title" subtitle="Provided Page SubTitle"> This content is filled via a default slot </landing-section-component>`,
 		</v-main>
-		<!-- <footer-alpha></footer-alpha> -->
+		<!-- <footer-alpha />-->
 	</v-app>
 </template>
 

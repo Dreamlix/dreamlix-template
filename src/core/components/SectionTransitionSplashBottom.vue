@@ -1,7 +1,7 @@
 <template>
 	<div class="container-bottom-transition">
 		<div class="image-block">
-			<img class="bottom-transition" src="/texture-bottom.png" alt="" />
+			<img class="bottom-transition" src="/texture-bottom.png" />
 			<!-- TODO: use require to get image from assets directory and add alt -->
 		</div>
 	</div>
