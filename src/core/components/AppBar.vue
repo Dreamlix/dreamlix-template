@@ -23,7 +23,7 @@ export default Vue.extend({
 		},
 		links: {
 			type: Array,
-			default: (): Array<Link> => [new Link('#', 'Store'), new Link('/', 'Accommodation'), new Link('/', 'Events'), new Link('/', 'Contact')] as Array<Link>
+			default: (): Array<Link> => [new Link('/', 'About Us'), new Link('/', 'Contact')] as Array<Link>
 		}
 	}
 });
