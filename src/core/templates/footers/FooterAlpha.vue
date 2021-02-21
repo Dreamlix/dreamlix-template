@@ -30,16 +30,14 @@ import Link from '@/core/models/link';
 
 export default Vue.extend({
 	components: { SocialsCard, LinkList },
-	data() {
-		return {
-			productLinks: [
-				new Link('Facebook.com', 'Influencers'),
-				new Link('Facebook.com', 'Competitor Tracking', 'Soon'),
-				new Link('Facebook.com', 'Social Listening', 'Soon'),
-				new Link('Facebook.com', 'Social Scheduling', 'Soon')
-			],
-			supportLinks: [new Link('Facebook.com', 'Contact Us'), new Link('Facebook.com', 'Watch Video'), new Link('Facebook.com', 'Guides', 'Soon')]
-		};
-	}
+	data: () => ({
+		productLinks: [
+			new Link('Facebook.com', 'Influencers'),
+			new Link('Facebook.com', 'Competitor Tracking', 'Soon'),
+			new Link('Facebook.com', 'Social Listening', 'Soon'),
+			new Link('Facebook.com', 'Social Scheduling', 'Soon')
+		],
+		supportLinks: [new Link('Facebook.com', 'Contact Us'), new Link('Facebook.com', 'Watch Video'), new Link('Facebook.com', 'Guides', 'Soon')]
+	})
 });
 </script>
