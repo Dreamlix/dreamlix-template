@@ -1,34 +1,41 @@
 <template>
-	<v-parallax src="https://i.imgur.com/bX2Uk7C.jpg" height="600" jumbotron>
+	<v-parallax :src="backgroundImage" :style="{ 'background-color': backgroundColor }" height="600">
+		<slot name="transition-top"></slot>
 		<h1>{{ title }}</h1>
-		<section-transition-splash-bottom></section-transition-splash-bottom>
+		<h3>{{ subtitle }}</h3>
+		<slot name="transition-bottom"></slot>
 	</v-parallax>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import SectionTransitionSplashBottom from './SectionTransitionSplashBottom.vue';
 
 export default Vue.extend({
-	components: { SectionTransitionSplashBottom },
+	components: {},
 	props: {
-		/**
-		 * A prop comment, normally prop names are desciptive and don't require comments
-		 */
 		title: {
 			type: String,
 			default: 'Example title'
 		},
 		subtitle: {
 			type: String,
-			default: 'Example subtitle'
+			default: ''
+		},
+		backgroundImage: {
+			type: String,
+			default: ''
+		},
+		backgroundColor: {
+			type: String,
+			default: '#FFFFFF'
 		}
 	}
 });
 </script>
 
 <style>
-	h1 {
-		text-align: center;
-	}
+h1,
+h3 {
+	text-align: center;
+}
 </style>
