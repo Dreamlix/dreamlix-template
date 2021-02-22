@@ -3,12 +3,15 @@
 		<div style="width: 100%">
 			<v-row>
 				<v-col cols="12" class="text-center justify-center pa-0 ma-0">
-					<v-img contain :src="require(`@/assets/image/${logo}`)" width="200" style="display: inline-block"/>
+					<v-img contain :src="require(`@/assets/image/${logo}`)" width="200" style="display: inline-block" />
 				</v-col>
 			</v-row>
 			<v-row>
 				<v-col cols="12" class="text-center justify-center pa-5 ma-0">
-					<h4>Copyright © {{ new Date().getFullYear() }} Maktub <br> All rights reserved</h4>
+					<h4>
+						Copyright © {{ new Date().getFullYear() }} Maktub <br />
+						All rights reserved
+					</h4>
 				</v-col>
 			</v-row>
 		</div>
@@ -24,7 +27,7 @@ export default Vue.extend({
 		logo: {
 			type: String,
 			default: ''
-		},
+		}
 	}
 });
 </script>

@@ -1,26 +1,18 @@
 <template>
-	<div class="pa-12" :style="{ 'background-color': backgroundColor}">
+	<div class="pa-12" :style="{ 'background-color': backgroundColor }">
 		<v-row>
-			<v-col
-				v-if="imageLocation === 'left'"
-				md="6"
-			>
+			<v-col v-if="imageLocation === 'left'" md="6">
 				<v-img :src="image"></v-img>
 			</v-col>
-			<v-col
-				md="6"
-			>
+			<v-col md="6">
 				<div class="container-title">
 					<div>
-						<h1>{{title}}</h1>
-						<h2>{{subtitle}}</h2>
+						<h1>{{ title }}</h1>
+						<h2>{{ subtitle }}</h2>
 					</div>
 				</div>
 			</v-col>
-			<v-col
-				v-if="imageLocation === 'right'"
-				md="6"
-			>
+			<v-col v-if="imageLocation === 'right'" md="6">
 				<v-img :src="image"></v-img>
 			</v-col>
 		</v-row>
