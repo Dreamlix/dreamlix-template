@@ -10,10 +10,7 @@
 						<h1>{{ title }}</h1>
 						<h2>{{ subtitle }}</h2>
 						<h4 v-if="phone">
-							<v-icon
-								small
-								color="black"
-							>
+							<v-icon small color="black">
 								mdi-phone
 							</v-icon>
 							{{ phone }}
@@ -31,7 +28,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import SocialsCard from "@/core/components/SocialsCard.vue";
+import SocialsCard from '@/core/components/SocialsCard.vue';
 
 export default Vue.extend({
 	components: {
