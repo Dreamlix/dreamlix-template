@@ -38,10 +38,10 @@
 				<v-row>
 					<v-col cols="8" class="offset-2">
 						<v-row>
-							<v-col cols="6" md="4">
+							<v-col cols="12" sm="6" md="4">
 								<card-info-minimal title="Title" background-image="/card-accommodation.jpg" link=""> </card-info-minimal>
 							</v-col>
-							<v-col cols="6" md="4">
+							<v-col cols="12" sm="6" md="4">
 								<card-info-minimal title="Accommodation" background-image="/card-accommodation.jpg" link=""> </card-info-minimal>
 							</v-col>
 							<v-col cols="12" md="4">
