@@ -8,14 +8,14 @@
 			</v-col>
 		</v-row>
 		<v-main>
-			<section-landing title="Provided Page Title" background-image="https://i.imgur.com/bX2Uk7C.jpg">
+			<section-landing title="SEARCH AND YOU SHALL FIND. DON’T MISS MAKTUB" background-image="/maktub-banner.png">
 				<template v-slot:transition-bottom>
 					<component :is="transitionBottom"></component>
 				</template>
 			</section-landing>
 			<section-image-text title="Welcome" subtitle="SURF, REGGGAE, MOJITOS, LIVE MUSIC, COOL LIFESTYLE." image="/maktub-who-we-are.png" image-location="left">
 			</section-image-text>
-			<section-image background-image="https://i.imgur.com/bX2Uk7C.jpg">
+			<section-image background-image="/maktub-onelove.png">
 				<template v-slot:transition-top>
 					<component :is="transitionTop"></component>
 				</template>
@@ -23,7 +23,8 @@
 					<component :is="transitionBottom"></component>
 				</template>
 			</section-image>
-			<section-image-text title="Provided Title" subtitle="Provided subtitle" image="https://i.imgur.com/bX2Uk7C.jpg" image-location="right"> </section-image-text>
+			<section-image-text title="Our food" subtitle="FRESH, UNIQUE AND DELICIOUS. YOU WON’T FIND BETTER ANYWHERE ELSE." image="/maktub-food.png" image-location="right">
+			</section-image-text>
 			<div style="position:relative;">
 				<div style="position: absolute; bottom: 0; left: 0; width: 100%;">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500">
@@ -50,7 +51,7 @@
 					</v-col>
 				</v-row>
 			</div>
-			<section-contact-map-text title="Provided Title" map-location="left" background-color="#FB9062" phone="+31 63 606 3595" socials="true">
+			<section-contact-map-text title="Join the family" map-location="left" background-color="#FB9062" phone="+31 63 606 3595" socials="true">
 				<template v-slot:map>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.035189733403!2d-17.236838684818323!3d32.76480078097577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc60527892750acb%3A0xaea65e8a0c010bc8!2sMaktub%20Pub!5e0!3m2!1sen!2suk!4v1614072653092!5m2!1sen!2suk"
