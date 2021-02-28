@@ -8,14 +8,14 @@
 			</v-col>
 		</v-row>
 		<v-main>
-			<section-landing title="SEARCH AND YOU SHALL FIND. DON’T MISS MAKTUB" background-image="/maktub-banner.png">
+			<section-landing title="SEARCH AND YOU SHALL FIND. DON’T MISS MAKTUB" background-image="maktub-banner.png">
 				<template v-slot:transition-bottom>
 					<component :is="transitionBottom"></component>
 				</template>
 			</section-landing>
-			<section-image-text title="Welcome" subtitle="SURF, REGGGAE, MOJITOS, LIVE MUSIC, COOL LIFESTYLE." image="/maktub-who-we-are.png" image-location="left">
+			<section-image-text title="Welcome" subtitle="SURF, REGGGAE, MOJITOS, LIVE MUSIC, COOL LIFESTYLE." image="maktub-who-we-are.png" image-location="left">
 			</section-image-text>
-			<section-image background-image="/maktub-onelove.png">
+			<section-image background-image="maktub-onelove.png">
 				<template v-slot:transition-top>
 					<component :is="transitionTop"></component>
 				</template>
@@ -23,7 +23,7 @@
 					<component :is="transitionBottom"></component>
 				</template>
 			</section-image>
-			<section-image-text title="Our food" subtitle="FRESH, UNIQUE AND DELICIOUS. YOU WON’T FIND BETTER ANYWHERE ELSE." image="/maktub-food.png" image-location="right">
+			<section-image-text title="Our food" subtitle="FRESH, UNIQUE AND DELICIOUS. YOU WON’T FIND BETTER ANYWHERE ELSE." image="maktub-food.png" image-location="right">
 			</section-image-text>
 			<div style="position:relative;">
 				<div style="position: absolute; bottom: 0; left: 0; width: 100%;">
@@ -39,13 +39,13 @@
 					<v-col cols="8" class="offset-2">
 						<v-row>
 							<v-col cols="12" sm="6" md="4">
-								<card-info-minimal title="Title" background-image="/card-accommodation.jpg" link=""> </card-info-minimal>
+								<card-info-minimal title="Title" background-image="card-accommodation.jpg" link=""> </card-info-minimal>
 							</v-col>
 							<v-col cols="12" sm="6" md="4">
-								<card-info-minimal title="Accommodation" background-image="/card-accommodation.jpg" link=""> </card-info-minimal>
+								<card-info-minimal title="Accommodation" background-image="card-accommodation.jpg" link=""> </card-info-minimal>
 							</v-col>
 							<v-col cols="12" md="4">
-								<card-info-minimal title="Title" background-image="/card-accommodation.jpg" link=""> </card-info-minimal>
+								<card-info-minimal title="Title" background-image="card-accommodation.jpg" link=""> </card-info-minimal>
 							</v-col>
 						</v-row>
 					</v-col>

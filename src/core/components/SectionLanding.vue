@@ -1,5 +1,5 @@
 <template>
-	<v-parallax :src="backgroundImage" :style="{ 'background-color': backgroundColor }" height="600">
+	<v-parallax :src="require(`@/assets/image/${backgroundImage}`)" :style="{ 'background-color': backgroundColor }" height="600">
 		<slot name="transition-top"></slot>
 		<h1>{{ title }}</h1>
 		<h3>{{ subtitle }}</h3>

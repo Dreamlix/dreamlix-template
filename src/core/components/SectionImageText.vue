@@ -13,7 +13,7 @@
 				</div>
 			</v-col>
 			<v-col v-if="imageLocation === 'right'" cols="12" md="6">
-				<v-img :src="image"></v-img>
+				<v-img :src="require(`@/assets/image/${image}`)"></v-img>
 			</v-col>
 		</v-row>
 	</div>
