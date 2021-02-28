@@ -14,7 +14,7 @@
 						<a target="_blank" :href="link"><v-btn class="primary">See more info</v-btn></a>
 					</v-overlay>
 				</v-fade-transition>
-				<v-img :src="backgroundImage"></v-img>
+				<v-img :src="require(`@/assets/image/${backgroundImage}`)"></v-img>
 			</v-card>
 		</template>
 	</v-hover>

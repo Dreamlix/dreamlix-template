@@ -1,19 +1,26 @@
 <template>
 	<div class="pa-12" :style="{ 'background-color': backgroundColor }">
 		<v-row>
-			<v-col v-if="imageLocation === 'left'" cols="12" md="6">
-				<v-img :src="image"></v-img>
+			<v-col v-if="mapLocation === 'left'" cols="12" md="6">
+				<slot name="map"></slot>
 			</v-col>
 			<v-col cols="12" md="6">
 				<div class="container-title">
 					<div>
 						<h1>{{ title }}</h1>
 						<h2>{{ subtitle }}</h2>
+						<h4 v-if="phone">
+							<v-icon small color="black">
+								mdi-phone
+							</v-icon>
+							{{ phone }}
+						</h4>
+						<socials-card v-if="socials"></socials-card>
 					</div>
 				</div>
 			</v-col>
-			<v-col v-if="imageLocation === 'right'" cols="12" md="6">
-				<v-img :src="require(`@/assets/image/${image}`)"></v-img>
+			<v-col v-if="mapLocation === 'right'" cols="12" md="6">
+				<slot name="map"></slot>
 			</v-col>
 		</v-row>
 	</div>
@@ -21,9 +28,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import SocialsCard from '@/core/components/SocialsCard.vue';
 
 export default Vue.extend({
-	components: {},
+	components: {
+		SocialsCard
+	},
 	props: {
 		title: {
 			type: String,
@@ -33,11 +43,19 @@ export default Vue.extend({
 			type: String,
 			default: ''
 		},
+		phone: {
+			type: String,
+			default: ''
+		},
+		socials: {
+			type: String,
+			default: 'false'
+		},
 		image: {
 			type: String,
 			default: ''
 		},
-		imageLocation: {
+		mapLocation: {
 			type: String,
 			default: 'left'
 		},
@@ -64,7 +82,8 @@ export default Vue.extend({
 }
 
 h2,
-h3 {
+h3,
+h4 {
 	text-align: center;
 }
 </style>

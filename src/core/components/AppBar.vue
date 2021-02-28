@@ -1,5 +1,5 @@
 <template>
-	<v-app-bar absolute color="transparent" dark hide-on-scroll prominent elevation="0">
+	<v-app-bar class="pa-5" absolute color="transparent" dark hide-on-scroll prominent elevation="0">
 		<div v-if="logo">
 			<v-img contain :src="require(`@/assets/image/${logo}`)" width="100" />
 		</div>
